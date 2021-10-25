@@ -1,17 +1,8 @@
-## **Intro**
+## Intro
+
+![](media/d19e5ed3626468df2af1d8513d4afb6e.png)
 
 This exercise is comprised of 2 steps.
-
-To complete it, you are provided with some resource files:
-
-Resources:
-<https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing>
-
-https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll
-
-Please go over the resources before continuing reading
-
-Please go over All the steps before you begin implementing
 
 General Notes:
 
@@ -19,21 +10,7 @@ General Notes:
 
 -   All Config\\Files files should be stored in JSON format
 
-You will be tested on:
-
--   Code cleanliness & readability
-
--   Correct layers design & design patterns
-
--   Error handling
-
--   The ability to understand what is asked from you
-
--   Production code best practices (ie: logging, input validations, etc.)
-
-Good luck!
-
-## **Step 1 - Create a Connector**
+## Step 1 - Create a Connector
 
 A Connector is a script with some input parameters, that is being run
 periodically and scheduled by some management framework.
@@ -46,10 +23,6 @@ data format that the framework expects).
 
 In this exercise, the communication with the framework will done via the
 SubProcessInputOutputHandler class.
-
-A Stub is available for you in the
-<https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing>[Resources
-folder](https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing).
 
 -   Use SubProcessInputOutputHandler.connector_params at the start of the script
     to get the connector inputed parameters.
@@ -64,7 +37,7 @@ In each iteration, the connector’s main method is called.
 
 You case use the **VirusTotalConnector.py** stub from the Resources folder
 
-### **Connector - Virus Total**
+### Connector - Virus Total
 
 The objective of this connector is, in each iteration, read a list of entities
 (domains) from a file, and for each entity scan it using the
@@ -107,9 +80,9 @@ output.
     input\\output from hardcoded files, and just run the
     *VirusTotalConncetor.py* manually **OR** implement step 1 + 2 together.
 
-## **Step 2 - Write a Connector Service Framework**
+## Step 2 - Write a Connector Service Framework
 
-### **Cycle Service:**
+### Cycle Service:
 
 The Cycle service is a service with an infinite loop, that runs python
 subprocess of connector scripts at configured intervals. The connectors generate
@@ -158,7 +131,7 @@ example)
 **Notice** - the Cycle service shouldn’t fail if the connector script has
 failed. However it should report if the connector completed successfully or not.
 
-### **SubProcessInputOutputHandler:**
+### SubProcessInputOutputHandler:
 
 A class that wraps the input\\output communication with the host-process.
 
