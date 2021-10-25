@@ -1,5 +1,7 @@
 ## Intro
 
+![](media/d19e5ed3626468df2af1d8513d4afb6e.png)
+
 This exercise is comprised of 2 steps.
 
 General Notes:
