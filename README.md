@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## **Intro**
 
 This exercise is comprised of 2 steps.
@@ -175,3 +176,6 @@ The class should expose the following:
     -   Will receive an ConnectorResult object, will return it via the stdout
 
     -   Will end the current process
+=======
+# API_Connectors_Framework
+>>>>>>> f62f0fd06eda85e59594dbb7da7dc9f126429be7
