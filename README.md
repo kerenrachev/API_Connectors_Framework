@@ -4,34 +4,12 @@ This exercise is comprised of 2 steps.
 
 To complete it, you are provided with some resource files:
 
-Resources:
-<https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing>
-
-https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll
-
-Please go over the resources before continuing reading
-
-Please go over All the steps before you begin implementing
 
 General Notes:
 
 -   All 3rd party API Calls are via their respective official Rest API
 
--   All Config\\Files files should be stored in JSON format
-
-You will be tested on:
-
--   Code cleanliness & readability
-
--   Correct layers design & design patterns
-
--   Error handling
-
--   The ability to understand what is asked from you
-
--   Production code best practices (ie: logging, input validations, etc.)
-
-Good luck!
+-   All Config\\Files files stored in JSON format
 
 ## **Step 1 - Create a Connector**
 
@@ -46,10 +24,6 @@ data format that the framework expects).
 
 In this exercise, the communication with the framework will done via the
 SubProcessInputOutputHandler class.
-
-A Stub is available for you in the
-<https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing>[Resources
-folder](https://drive.google.com/drive/folders/1xsvEkb9Alm8Oag64HKEMSDGPoiEwo5ll?usp=sharing).
 
 -   Use SubProcessInputOutputHandler.connector_params at the start of the script
     to get the connector inputed parameters.
